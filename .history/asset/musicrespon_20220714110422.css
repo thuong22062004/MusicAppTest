@@ -1,0 +1,118 @@
+@media (max-width: 740px) {
+    .home__container--header{
+        display:flex;
+        /* align-items: center; */
+        justify-content:space-between;
+        font-size:1.4rem;
+        font-weight: 800;
+        align-items: center;
+        color:rgb(253, 61, 61);
+      }
+      .home__container--header i {
+        font-size:1.6rem;
+        color:yellow;
+      }
+      .Container__trend-img{
+        width: 320px;
+        height: 150px;
+        border-radius: 5px;
+      }
+      .home__container-trend{
+        margin-top: 20px;
+      }
+      .trend__img-item{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+      }
+      .container__field--header{
+        margin-top: 20px;
+      }
+      .container__field--title{
+        font-weight: 800;
+        font-size: 1.2rem;
+        color:rgb(0, 255, 149);
+      }
+      .contaner-field-img{
+        width: 100px;
+        height: 100px;
+        margin: 5px ;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      .contaner-field-img:active{
+        opacity: 0.6;
+      }
+      .container__field-vn,
+      .container__field-usuk,
+      .container__field-kr{
+        margin-top: 10px;
+      }
+      .field__img-item{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 3px;
+      }
+                                /* Personnal */
+      .Home__Personal{
+        background: #1e2122;  /* fallback for old browsers */
+      }
+     .home__personal-cover{
+       color:var(--text-color);
+      padding-bottom: 150px;
+     }
+     .history__Playing{
+       background: var(--background-top-bot);
+       display:flex;
+       padding: 20px;
+       align-items: center;
+       font-size: 1.4rem;
+       justify-content: space-between;
+       color:var(--text-color-else);
+     }
+     .history__playing-header{
+     }
+     .history-icon-back{
+       font-size: 1.6rem;
+     }
+     .history-icon{
+      font-size: 1.6rem;
+      color: rgb(27, 226, 160);
+     }
+     .recent__songs--header{
+       text-align: center;
+       margin-top: 20px;
+     }
+     .recent__songs-title{
+      color: rgb(164, 212, 29);
+      font-size: 1rem;
+      padding: 10px;
+      background:rgb(19, 17, 17);
+      display: inline-block;
+      border-radius: 40px;
+      animation: blink 15s linear infinite;
+      border-style: solid;
+     }
+     .recent__songs-list{
+       margin-top:20px;
+     }
+     .song__recent--item{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0px 10px 10px 10px;
+      background:var(--background-top-bot);
+      padding: 10px 20px;
+      border-radius:40px;
+     }
+     .isrecent-song{
+        text-align: center;
+        margin-top: 200px
+     }
+     .song__recent--item:active{
+       opacity: 0.6;
+     }
+}

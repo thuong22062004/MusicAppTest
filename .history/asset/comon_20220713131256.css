@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+      --text-color:white;
+      --text-opacity :#5c8a9c;
+      --text-common :#C22C04;
+      --background-top-bot : #050316;
+      --color-empty :#544358;
+      --text-color-else :#7C53D0;
+}
+html {
+      font-family: "Poppins", sans-serif;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      /* height: 100vh; */
+      color:var(--text-color);
+      /* overflow-y: auto; */
+      overflow-x: hidden;
+      background:var(--background-top-bot) ;
+} 
+@keyframes blink {
+        0% {
+          border-color: violet;
+        }
+        14.3% {
+          border-color: rgb(164, 212, 29);
+        
+        }
+        28.6% {
+          border-color: rgb(50, 166, 219);
+        
+        }
+        42.9% {
+          border-color: green;
+        
+        }
+        57.2% {
+          border-color: yellow;
+        
+        }
+        71.5% {
+          border-color: orchid;
+        
+        }
+        85.8% {
+          border-color: rgb(27, 226, 160);
+        
+        }
+        100% {
+          border-color: violet;
+        
+        }
+      }
+      
+      @-webkit-keyframes blink {
+        0% {
+          border-color: violet;
+        }
+        14.3% {
+          border-color: rgb(164, 212, 29);
+        }
+        28.6% {
+          border-color: rgb(74, 201, 240);
+        }
+        42.9% {
+          border-color: green;
+        }
+        57.2% {
+          border-color: yellow;
+        }
+        71.5% {
+          border-color: orchid;
+        }
+        85.8% {
+          border-color: rgb(27, 226, 160);
+        }
+        100% {
+          border-color: violet;
+        }
+ }
+ @keyframes blinkBackground {
+  0% {
+    background: violet;
+  }
+  14.3% {
+    background: rgb(164, 212, 29);
+  
+  }
+  28.6% {
+    background: rgb(50, 166, 219);
+  
+  }
+  42.9% {
+    background: green;
+  
+  }
+  57.2% {
+    background: yellow;
+  
+  }
+  71.5% {
+    background: orchid;
+  
+  }
+  85.8% {
+    background: rgb(27, 226, 160);
+  
+  }
+  100% {
+    background: violet;
+  
+  }
+}
+
+@-webkit-keyframes blinkBackground {
+  0% {
+    background: violet;
+  }
+  14.3% {
+    background: rgb(164, 212, 29);
+  }
+  28.6% {
+    background: rgb(74, 201, 240);
+  }
+  42.9% {
+    background: green;
+  }
+  57.2% {
+    background: yellow;
+  }
+  71.5% {
+    background: orchid;
+  }
+  85.8% {
+    background: rgb(27, 226, 160);
+  }
+  100% {
+    background: violet;
+  }
+}
+@keyframes HandleTranlateY {
+  from{
+  transform: translateY(50px);
+  opacity: 0;
+  }to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes showWhenDirec {
+  from{
+  transform: translateY(620px);
+  opacity: 0;
+  }to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes NodetranslateYunder {
+  0%{
+    color:#d530e4;
+    transform:translateY(-10px);
+  }
+  25%{
+    color:#27cae7;
+    transform:translateY(10px);
+  } 
+  50%{
+    color:#a2d42d;
+    transform:translateY(-10px);
+
+  }
+  75%{
+    color:#00F260;
+    transform:translateY(10px);
+  }
+  100%{
+    color:#f7b231;
+    transform:translateY(-10px);
+
+  }
+}
+@keyframes NodetranslateYover {
+  0%{
+    color:#a2d42d;
+    transform:translateY(10px);
+  }
+  25%{
+    color:#f7b231;
+    transform:translateY(-10px);
+  } 
+  50%{
+    color:#d530e4;
+    transform:translateY(10px);
+  }
+  75%{
+    color:#27cae7;
+    transform:translateY(-10px);
+  }
+  100%{
+    color:#00F260;
+    transform:translateY(10px);
+
+  }
+}
+.play-now.hide{
+  display:none;
+}
+.play-now{
+  animation: showWhenDirec 0.3s linear;
+}
+/* cho dieu tiết  */
+.Home__Music{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size:2rem;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  background:var(--background-top-bot);
+  width: 100%;
+  border-top: 1px solid wheat;
+}
+.Home__Music span {
+  text-decoration: none; 
+  opacity: 0.8;
+  color:var(--text-opacity);
+}
+.Home__Music-options{
+  margin: 0 20%;
+  /* background:wheat; */
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0; 
+}
+.directions__discover.showDirec{
+   color:orangered;
+}
+.directions__home.showDirec{
+  color:orangered;
+}
+.directions__personal.showDirec{
+  color:orangered;
+}
+.list__Song{
+  display:none;
+}
+.list__Song.ShowDiscover{
+  display:block;
+  animation: showWhenDirec 0.2s linear;
+}
+.Total__home.hideHome{
+  display:none;
+}
+.Home__Personal{
+  display:none;
+}
+.Home__Personal.showPersonal{
+  display:block;
+  animation: showWhenDirec 0.3s linear;
+}
+.directions__home,.directions__discover,.directions__personal{
+  width: 30%;
+}
+.Home__Music.hide{
+  transform: translateY(80px);
+  transition: transform 1s linear;
+}
+.song__album--item:active{
+  opacity: 0.6;
+}
+.total__AllplayingMini{
+  position: fixed;
+  background:black;
+  bottom: 58px;
+  /* display:none; */
+  width: 100%;
+  left: 0;
+  transform: translateX(0px);
+  transition: transform .6s linear;
+  opacity: 1;
+}
+.contain__playingMiniSong{
+  display:flex;
+  align-items: center;
+ 
+}
+.playing__mini__Song{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.contain-playing__mini{
+  display:flex;
+  align-items: center;
+  /* width: 100%; */
+  padding: 10px 0px 0px 30px ;
+}
+.img-playing__mini{
+  width: 50px;
+  height:50px;
+  /* border-radius: 50%; */
+}
+.contain__header-playing__mini{
+  font-size:1rem;
+  text-align:left;
+  margin: 0 10px;
+  opacity: 0.6;
+  color:var(--text-opacity);
+  text-transform: capitalize;
+}
+.total__AllplayingMini.hide{
+  transform: translateX(500px);
+  opacity: 0;
+}
+.playing-header__mini{
+  font-size:0.8rem;
+  text-align:none;
+  color:azure;
+  opacity: 1;
+}
+.playing-btn__mini{
+  opacity: 0.9;
+  color:azure;
+  font-size:1.4rem;
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 10px 30px 0px 0px ;
+}
+.playing-singer__mini{
+  font-size:0.6rem;
+}
+.background__range-mini{
+  animation: blinkBackground 20s linear infinite;
+  height: 3px;
+  width: 0%;
+  border-top-right-radius: 2px;
+}
