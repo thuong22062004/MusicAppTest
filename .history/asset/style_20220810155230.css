@@ -190,9 +190,12 @@ animation: AnimateBG 20s ease infinite;
   color: transparent;
   margin: 0 auto;
 }
-/* cục tròn input thật */
+
 .range::-webkit-slider-thumb{
-  opacity: 0;
+  /* -webkit-appearance: none; */
+  width: 10rem;
+  height: 10rem;
+  appearance: none;
   border-radius:50%;
   z-index: 2;
   cursor: pointer;

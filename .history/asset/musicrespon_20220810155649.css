@@ -115,5 +115,11 @@
      .song__recent--item:active{
        opacity: 0.6;
      }
-     
+     /* cục tròn input thật */
+     .range::-webkit-slider-thumb{
+      opacity: 0;
+      border-radius:50%;
+      z-index: 2;
+      cursor: pointer;
+    }
 }
