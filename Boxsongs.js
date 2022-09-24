@@ -952,6 +952,41 @@ const Songs = {
             audio : './music/VN/thichthich.mp3',
             image : './asset/img/VN/thichthich.jpg'
         },
+        { id :137,
+            titleSong : 'Tình đã đầy một tim',
+            author : "Huyền Tâm môn",
+            field :'VN',
+            audio : './music/VN/tinhdadaymotim.mp3',
+            image : './asset/img/VN/tinhdadaymotim.jpg'
+        },
+        { id :138,
+            titleSong : 'Chạy Khỏi Thế Giới Này',
+            author : " Da LAB, Phương Ly",
+            field :'VN',
+            audio : './music/VN/chaykhoithegioinay.mp3',
+            image : './asset/img/VN/chaykhoithegioinay.jpg'
+        },
+        { id :139,
+            titleSong : 'Lần Hẹn Hò Đầu Tiên',
+            author : " Huyền Tâm môn",
+            field :'VN',
+            audio : './music/VN/lanhenhodautien.mp3',
+            image : './asset/img/VN/lanhenhodautien.jpg'
+        },
+        { id :140,
+            titleSong : 'Em ngủ Chưa',
+            author : " Trịnh Thăng Bình Ft. Osad",
+            field :'VN',
+            audio : './music/VN/emnguchua.mp3',
+            image : './asset/img/VN/emnguchua.jpg'
+        },
+        { id :141,
+            titleSong : 'Chuyện đôi ta',
+            author : "TEmcee L (Da LAB), Muộii",
+            field :'VN',
+            audio : './music/VN/chuyendoita.mp3',
+            image : './asset/img/VN/chuyendoita.jpg'
+        },
         // 2:40 PM 8/10/2022 waitting for a job
     ],
     KR : [
@@ -1059,6 +1094,13 @@ const Songs = {
             field :'KR',
             audio : './music/KR/money.mp3',
             image : './asset/img/KR/money.jpeg'
+        },
+        { id :16,
+            titleSong : "Pink Venom",
+            author : 'BlackPink',
+            field :'KR',
+            audio : './music/KR/pinkvenom.mp3',
+            image : './asset/img/KR/pinkvenom.jpg'
         },
     ],
     USUK : [
@@ -1861,6 +1903,22 @@ const Songs = {
             field :'USUK',
             audio : './music/USUK/heartbreakanniversary.mp3',
             image : './asset/img/USUK/heartbreakanniversary.jfif'
+        },
+        {
+            id :101,
+            titleSong : "Boyfriend",
+            author : 'Justin Bieber',
+            field :'USUK',
+            audio : './music/USUK/boyfriend.mp3',
+            image : './asset/img/USUK/boyfriend.jpg'
+        },
+        {
+            id :102,
+            titleSong : "No Brainer",
+            author : 'DJ Khaled,Justin Bieber,Chance The Rapper,Quavo',
+            field :'USUK',
+            audio : './music/USUK/nobrainer.mp3',
+            image : './asset/img/USUK/nobrainer.jpg'
         },
     ]
 }
